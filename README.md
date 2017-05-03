@@ -7,12 +7,12 @@ A react component for making source-code snippets prettier using Google's [code-
 
 # Usage
 
-## Importing component.
+### Importing the component.
 ```javascript
   import Code from 'react-code-prettify';
 ```
 
-## Move your code into a string.
+### Assign your code snippet as a string to a variable.
 ```javascript
 const codeString = `function map(f, a) {
   var result = [], // Create a new Array
@@ -23,7 +23,7 @@ const codeString = `function map(f, a) {
 };`
 ```
 
-## Passing it to the `Code` component.
+### Passing the snippet to the component.
 ```
 <Code
   codeString={example1} 
@@ -36,7 +36,7 @@ const codeString = `function map(f, a) {
 ### CodeString
  Required prop. Need to be the string of code that you want to pretify and highlight.
  
- ### language
+### language
   Optional prop. You don't need to specify the language since it will automatically guess. Still you can specify a language by 
   passing it in this props.
 
