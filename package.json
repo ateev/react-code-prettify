@@ -21,14 +21,14 @@
   },
   "name": "react-code-prettify",
   "description": "A react component for making source-code snippets prettier.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "index.js",
   "scripts": {
     "test": "jest",
     "test-update": "jest -u",
     "test-coverage": "jest --coverage",
     "uglify": "uglifyjs dist/react-code-prettify.js dist/styles.js --compress -o dist/react-code-prettify.js",
-    "babel": "babel --plugins transform-es2015-modules-umd src --ignore __tests__ --out-dir ./dist",
+    "babel": "babel --plugins transform-es2015-modules-umd src --ignore *.test.js --out-dir ./dist",
     "prepublish": "npm-run-all babel"
   },
   "repository": {
