@@ -1,9 +1,8 @@
-:warning:  Experimental Stage. Supports only few languages. :warning:
-
-
 # react-code-prettify
 A react component for making source-code snippets prettier using Google's [code-prettify](https://github.com/google/code-prettify).
 
+
+:warning:  Experimental Stage. Supports only few languages. :warning:
 
 # Usage
 
@@ -41,3 +40,8 @@ const codeString = `function map(f, a) {
   passing it in this props.
 
 
+## Thanks
+
+* Thanks to the contributors of [code-prettify](https://github.com/google/code-prettify) and Google.
+* Thanks to [Alex Milanov](https://github.com/alex-milanov) for npm fork of `code-prettify`.
+* Thanks to [Max Stoiber](https://github.com/mxstbr) for [styled-components](https://github.com/styled-components/styled-components) :nail_care:
