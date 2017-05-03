@@ -1,0 +1,54 @@
+{
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-core": "^6.21.0",
+    "babel-jest": "^18.0.0",
+    "babel-plugin-transform-es2015-modules-umd": "^6.18.0",
+    "babel-polyfill": "^6.20.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-2": "^6.18.0",
+    "enzyme": "^2.7.0",
+    "jest": "^18.1.0",
+    "jest-cli": "^18.1.0",
+    "jest-serializer-enzyme": "^1.0.0",
+    "lerna": "^2.0.0-rc.3",
+    "npm-run-all": "^4.0.1",
+    "react-addons-test-utils": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "uglify": "^0.1.5",
+    "uglify-js": "^2.7.5"
+  },
+  "name": "react-code-prettify",
+  "description": "A react component for making source-code snippets prettier.",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test-update": "jest -u",
+    "test-coverage": "jest --coverage",
+    "uglify": "uglifyjs dist/react-code-prettify.js dist/styles.js --compress -o dist/react-code-prettify.js",
+    "babel": "babel --plugins transform-es2015-modules-umd src --ignore __tests__ --out-dir ./dist",
+    "prepublish": "npm-run-all babel"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ateev/react-code-prettify.git"
+  },
+  "keywords": [
+    "react",
+    "component",
+    "source-code"
+  ],
+  "author": "ateev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ateev/react-code-prettify/issues"
+  },
+  "homepage": "https://github.com/ateev/react-code-prettify#readme",
+  "dependencies": {
+    "code-prettify": "alex-milanov/code-prettify",
+    "react": "^15.4.2",
+    "styled-components": "^1.4.4"
+  }
+}
