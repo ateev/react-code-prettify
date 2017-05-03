@@ -40,6 +40,10 @@ const codeString = `function map(f, a) {
   Optional prop. You don't need to specify the language since it will automatically guess. Still you can specify a language by 
   passing it in this props.
 
+## What's Next ?
+* Need support for HTML snippets. - [Issue 1](https://github.com/ateev/react-code-prettify/issues/1)
+* Need support for more themes - [Issue 2](https://github.com/ateev/react-code-prettify/issues/2)
+
 
 ## Thanks
 
