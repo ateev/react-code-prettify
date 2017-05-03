@@ -4,7 +4,7 @@ import {TomorrowNight} from './styles';
 
 class Code extends React.Component {
     render() {
-        const codeData = prettify.prettyPrintOne(this.props.codeString);
+        const codeData = prettify.prettyPrintOne(this.props.codeString, this.props.language);
         const codeClassName = this.props.language !== undefined ? `language-${this.props.language}` : undefined;
         return (
             <TomorrowNight>
