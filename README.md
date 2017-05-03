@@ -1,6 +1,7 @@
 # react-code-prettify
 A react component for making source-code snippets prettier using Google's [code-prettify](https://github.com/google/code-prettify).
 
+![HTML code snippet](https://preview.ibb.co/bvEiLk/Screen_Shot_2017_05_03_at_5_30_22_PM.png)
 
 :warning:  Experimental Stage. Supports only few languages. :warning:
 
