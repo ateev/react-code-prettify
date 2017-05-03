@@ -21,7 +21,7 @@
   },
   "name": "react-code-prettify",
   "description": "A react component for making source-code snippets prettier.",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "main": "index.js",
   "scripts": {
     "test": "jest",
