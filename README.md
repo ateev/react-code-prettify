@@ -26,8 +26,8 @@ const codeString = `function map(f, a) {
 ### Passing the snippet to the component.
 ```
 <Code
-  codeString={example1} 
-  language="javascript" 
+  codeString={example1}
+  language="javascript"
  />
 ```
 
@@ -35,13 +35,12 @@ const codeString = `function map(f, a) {
 
 ### CodeString
  Required prop. Need to be the string of code that you want to pretify and highlight.
- 
+
 ### language
-  Optional prop. You don't need to specify the language since it will automatically guess. Still you can specify a language by 
-  passing it in this props.
+  Optional prop. You don't need to specify the language since it will automatically guess. Still you can specify a language by
+  passing it in this props. If you want to use html, make sure you set the language to "html".
 
 ## What's Next ?
-* Need support for HTML snippets. - [Issue 1](https://github.com/ateev/react-code-prettify/issues/1)
 * Need support for more themes - [Issue 2](https://github.com/ateev/react-code-prettify/issues/2)
 
 
