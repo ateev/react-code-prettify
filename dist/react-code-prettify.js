@@ -85,10 +85,27 @@
         }
 
         _createClass(Code, [{
+            key: 'htmlEscape',
+            value: function htmlEscape(s) {
+                return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+            }
+        }, {
             key: 'render',
             value: function render() {
+                var _this2 = this;
+
                 var codeData = _codePrettify2.default.prettyPrintOne(this.props.codeString);
+
+                // If language is set to 'html' replace all html entities with character codes
+                if (this.props.language == 'html') {
+                    var codeDataArray = this.props.codeString.split('');
+                    var codeEscaped = codeDataArray.map(function (letter) {
+                        return _this2.htmlEscape(letter);
+                    }).join('');
+                    codeData = _codePrettify2.default.prettyPrintOne(codeEscaped);
+                }
                 var codeClassName = this.props.language !== undefined ? 'language-' + this.props.language : undefined;
+
                 return _react2.default.createElement(
                     _styles.TomorrowNight,
                     null,
